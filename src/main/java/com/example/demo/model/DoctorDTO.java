@@ -3,16 +3,15 @@ package com.example.demo.model;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @AllArgsConstructor
-public class PatientDTO {
+public class DoctorDTO {
     private Long id;
-    private String email;
-    private final String idCardNo;
     private String firstName;
     private String lastName;
-    private String phoneNumber;
-    private LocalDate birthday;
+    private String email;
+    private String specialization;
+    private List<Institution> institutions;
 }
